@@ -1,0 +1,28 @@
+{
+  "name": "appwrite-muro",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "empaquetar": "npm run build && COPYFILE_DISABLE=1 tar -czf sitio.tar.gz -C dist ."
+  },
+  "dependencies": {
+    "appwrite": "^28.1.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@vitejs/plugin-react": "^6.1.1",
+    "oxlint": "^1.81.0",
+    "vite": "^8.3.0"
+  },
+  "description": "Muro de mensajes en tiempo real con React y Appwrite (TablesDB, Realtime, Storage, Auth)",
+  "license": "MIT",
+  "author": "Kevin Rojas (https://kevorojas.com)"
+}
